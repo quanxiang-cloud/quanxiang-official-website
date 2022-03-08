@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="1440" height="1874" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <defs>
+  <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="1176" width="1176" y="0" x="454" id="filter0_f_1_535">
+   <feGaussianBlur result="effect1_foregroundBlur_1_535" stdDeviation="200"/>
+  </filter>
+  <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="822" width="822" y="551" x="922" id="filter1_f_1_535">
+   <feGaussianBlur result="effect1_foregroundBlur_1_535" stdDeviation="150"/>
+  </filter>
+  <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="822" width="822" y="1052" x="-240" id="filter2_f_1_535">
+   <feGaussianBlur result="effect1_foregroundBlur_1_535" stdDeviation="150"/>
+  </filter>
+  <linearGradient y2="1" x2="0.5" y1="0" x1="0.5" id="paint0_linear_1_535">
+   <stop stop-color="#67E8F9"/>
+   <stop stop-color="#22D3EE" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="796" width="1422" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" filter="url(#filter0_f_1_535)">
+   <circle id="svg_2" fill="url(#paint0_linear_1_535)" r="188" cy="588" cx="1042"/>
+  </g>
+  <g id="svg_3" filter="url(#filter1_f_1_535)" opacity="0.8">
+   <circle id="svg_4" fill="#D946EF" r="111" cy="962" cx="1333"/>
+  </g>
+  <g id="svg_5" filter="url(#filter2_f_1_535)" opacity="0.5">
+   <circle id="svg_6" fill="#6366F1" r="111" cy="1463" cx="171"/>
+  </g>
+ </g>
+</svg>
