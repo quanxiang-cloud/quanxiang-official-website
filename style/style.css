@@ -10,7 +10,7 @@
   --dl-color-gray-4                 : #94a3b8ff;
   --dl-color-gray-5                 : #64748bff;
   --dl-color-gray-6                 : #475569ff;
-  --dl-color-gray-8                 : #627597ff;
+  --dl-color-gray-8                 : #1E293B;
   --dl-color-gray-9                 : #8193b2ff;
   --dl-color-gray-0.5               : #f8fafcff;
   --dl-color-pink-100               : #c20eefff;
@@ -72,13 +72,10 @@ body {
   border             : 1px solid rgba(255, 255, 255, 0.2);
   height             : 136px;
   padding            : 44px 20px 16px 20px;
-  background         : rgba();
   box-sizing         : border-box;
   border-radius      : 20px;
-  backdrop-filter    : blue(4px);
-  background-size    : 120% 120%;
   background-color   : var(--dl-color-black-dev-card-bg);
-  background-image   : url(./public/playground_assets/dev-card-bg.svg);
+  background-image   : url(/images/dev-card-bg.svg);
   background-repeat  : no-repeat;
   background-position: center;
   display            : flex;
@@ -122,6 +119,7 @@ body {
   color      : var(--dl-color-purple-1);
   display    : flex;
   line-height: 28px;
+  align-items: center;
 }
 
 .feat-function-list {
@@ -260,6 +258,7 @@ body {
 /* custom class */
 
 .home-header-wrap {
+  height: 62px;
   top            : 0;
   left           : 0;
   width          : 100%;
@@ -269,19 +268,14 @@ body {
   justify-content: center;
   box-shadow     : 0px 8px 24px 4px rgb(148 163 184 / 25%);
   background     : rgba(238, 245, 255, 0.9);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   z-index        : 99;
 }
 
 .home-header {
-  top            : 0px;
   display        : flex;
-  position       : sticky;
   max-width      : var(--dl-size-size-maxwidth);
-  align-self     : flex-start;
   align-items    : center;
-  padding-top    : 20px;
-  padding-bottom : 20px;
   justify-content: space-between;
 }
 
@@ -295,48 +289,16 @@ body {
 }
 
 .home-nav-links {
-  flex          : 0 0 auto;
-  color         : var(--dl-color-gray-8);
-  display       : flex;
-  font-size     : 14px;
-  align-items   : center;
-  font-weight   : 600;
-  line-height   : 22px;
-  flex-direction: row;
+  color  : var(--dl-color-gray-8);
+  display: flex;
+  gap    : 30px;
 }
 
 .home-nav-link-text {
-  transition: 0.3s;
+  color: var(--dl-color-gray-8)
 }
 
 .home-nav-link-text:hover {
-  color: var(--dl-color-blue-3);
-}
-
-.home-nav-link-text1 {
-  transition : 0.3s;
-  margin-left: var(--dl-space-space-twounits);
-}
-
-.home-nav-link-text1:hover {
-  color: var(--dl-color-blue-3);
-}
-
-.home-nav-link-text2 {
-  transition : 0.3s;
-  margin-left: var(--dl-space-space-twounits);
-}
-
-.home-nav-link-text2:hover {
-  color: var(--dl-color-blue-3);
-}
-
-.home-nav-link-text3 {
-  transition : 0.3s;
-  margin-left: var(--dl-space-space-twounits);
-}
-
-.home-nav-link-text3:hover {
   color: var(--dl-color-blue-3);
 }
 
@@ -414,6 +376,7 @@ body {
   position        : relative;
   box-sizing      : border-box;
   align-items     : center;
+  margin-left: 36px;
   border          : 1px solid var(--dl-color-gray-2);
   border-radius   : var(--dl-radius-radius-radius4);
   justify-content : center;
@@ -442,7 +405,7 @@ body {
 
 .first-section {
   background-color   : var(--dl-color-gray-bg-1);
-  background-image   : url("public/playground_assets/vector43024177-9u4e.svg");
+  background-image   : url("/images/img_matrix.svg");
   background-repeat  : no-repeat;
   background-position: bottom;
 }
@@ -453,7 +416,7 @@ body {
   display            : flex;
   align-items        : flex-end;
   justify-content    : center;
-  background-image   : url("public/playground_assets/binary-stream.svg");
+  background-image   : url("/images/binary-stream.svg");
   background-repeat  : no-repeat;
   background-position: top;
 }
@@ -468,6 +431,7 @@ body {
 .home-intro-title {
   color        : var(--dl-color-gray-8);
   margin-bottom: 20px;
+
 }
 
 
@@ -553,8 +517,10 @@ body {
 }
 
 .feature-section-title {
-  color        : var(--dl-color-gray-white);
-  margin-bottom: 16px;
+  background             : linear-gradient(91.71deg, #74CDFF 0%, #5879FF 52.56%, #9C4EFF 100%) no-repeat;
+  -webkit-background-clip: text;
+  color                  : var(--dl-color-gray-white);
+  margin-bottom          : 16px;
 }
 
 .feature-section-sub-title {
@@ -597,7 +563,6 @@ body {
   box-shadow       : inset 0px 1px 0px rgba(255, 255, 255, 0.25);
   border-radius    : 20px;
   background-size  : auto;
-  background-image : linear-gradient(91.71deg, #1849FD 0%, #C20EEF 100%);
   background-repeat: no-repeat;
 }
 
@@ -677,7 +642,7 @@ body {
 .feature-detail-section-dark {
   height             : 700px;
   background-size    : cover;
-  background-image   : url("public/playground_assets/fade-bg.svg");
+  background-image   : url("/images/fade-bg.svg");
   background-repeat  : repeat-y;
   background-position: 0 -700px;
 }
@@ -686,7 +651,7 @@ body {
   height             : 270px;
   background-color   : var(--dl-color-blue-3);
   background-size    : cover;
-  background-image   : url("public/playground_assets/img_grid-bg.svg");
+  background-image   : url("/images/img_grid-bg.svg");
   background-repeat  : no-repeat;
   background-position: 50% 80%;
 }
@@ -843,3 +808,43 @@ body {
 @media(max-width: 479px) {}
 
 @media(max-width: 767px) {}
+
+.bg-gradient-blue-purple {
+  background-image: linear-gradient(91.71deg, #1849FD 0%, #C20EEF 100%);
+}
+
+.bg-gradient-white-purple {
+  background: linear-gradient(91.71deg, #74CDFF 0%, #5879FF 52.56%, #9C4EFF 100%);
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(90deg, #6EAFFF 0%, #73D5FF 100%);
+}
+
+.bg-gradient-blue-white {
+  background: linear-gradient(90deg, #2888FF 0%, #80BCFF 100%);
+}
+
+.fade-text {
+  background-clip        : text;
+  -webkit-background-clip: text;
+  -moz-background-clip   : text;
+  -webkit-text-fill-color: transparent;
+  color                  : transparent;
+}
+
+
+.roll-text-wrap {
+  display    : flex;
+  align-items: center;
+}
+
+.roll-mask span[data-show] {
+  transform : translateY(100%);
+  transition: .5s transform ease-in-out;
+}
+
+.roll-mask span[data-up] {
+  transform : translateY(200%);
+  transition: .5s transform ease-in-out;
+}

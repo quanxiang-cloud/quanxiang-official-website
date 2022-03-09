@@ -7,21 +7,22 @@
   <meta property="og:title" content="QXP home page" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="./reset.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon" />
+
+  <link rel="stylesheet" href="./style/reset.css" />
+  <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <body>
   <div class="home-header-wrap">
     <header data-role="Header" class="home-header page-content">
-      <img alt="image" src="public/playground_assets/brand.svg" class="home-brand" />
+      <img alt="image" src="images/brand.svg" class="home-brand" />
       <div class="home-nav">
         <nav class="home-nav-links">
-          <span class="home-nav-link-text buttonText">首页</span>
-          <span class="home-nav-link-text1 buttonText">文档</span>
-          <span class="home-nav-link-text2 buttonText">博客</span>
-          <span class="home-nav-link-text3 buttonText">社区</span>
+          <a href="/" class="home-nav-link-text buttonText">首页</a>
+          <a href="/" class="home-nav-link-text buttonText">文档</a>
+          <a href="/" class="home-nav-link-text buttonText">博客</a>
+          <a href="/" class="home-nav-link-text buttonText">社区</a>
         </nav>
       </div>
       <div data-type="BurgerMenu" class="home-burger-menu">
@@ -34,7 +35,7 @@
       <div data-type="MobileMenu" class="home-mobile-menu">
         <div class="home-nav1">
           <div class="home-container01">
-            <img alt="image" src="public/playground_assets/brand.svg" class="home-brand" />
+            <img alt="image" src="images/brand.svg" class="home-brand" />
             <div data-type="CloseMobileMenu" class="home-close-mobile-menu">
               <svg viewBox="0 0 1024 1024" class="home-icon02">
                 <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
@@ -44,9 +45,9 @@
           </div>
           <nav class="navigation-links-nav navigation-links-root-class-name16">
             <span class="navigation-links-text">首页</span>
-            <span class="navigation-links-text1">文档</span>
-            <span class="navigation-links-text2">博客</span>
-            <span class="navigation-links-text3">社区</span>
+            <span class="navigation-links-text">文档</span>
+            <span class="navigation-links-text">博客</span>
+            <span class="navigation-links-text">社区</span>
           </nav>
         </div>
         <div>
@@ -66,7 +67,7 @@
         </div>
       </div>
       <div class="home-star-btn">
-        <img alt="icon_github" src="public/playground_assets/icon_github.svg" class="home-github" />
+        <img alt="icon_github" src="images/icon_github.svg" class="home-github" />
         <span class="home-start-btn-text buttonText">Star</span>
       </div>
     </header>
@@ -75,12 +76,21 @@
     <div class="home-section first-section">
       <div class="first-page-content page-content">
         <div class="home-first-page-content">
-          <span class="home-intro-title pageTitle">
-            搭建业务系统，如此简单
-          </span>
-          <span class="home-intro-sub-title pageSubTitle">
+          <h1 class="home-intro-title pageTitle roll-text-wrap">
+            搭建
+            <div text-roll-mask class="roll-mask">
+              <span class="fade-text bg-gradient-blue-purple">业务系统</span>
+              <span class="fade-text bg-gradient-blue-purple">工作流程</span>
+              <span class="fade-text bg-gradient-blue-purple">自定页面</span>
+            </div>，如此<div text-roll-mask class="roll-mask short-title">
+              <span class="fade-text bg-gradient-blue-purple">简单</span>
+              <span class="fade-text bg-gradient-blue-purple">敏捷</span>
+              <span class="fade-text bg-gradient-blue-purple">快速</span>
+            </div>
+          </h1>
+          <h2 class="home-intro-sub-title pageSubTitle">
             全象开源低代码平台，加速企业数智化转型
-          </span>
+          </h2>
           <div class="first-page-btns">
             <div class="github-btn">
               <svg viewBox="0 0 877.7142857142857 1024" class="button-icon icon__white">
@@ -91,13 +101,13 @@
               <span class="get-project-btn buttonText">获取项目</span>
             </div>
             <div class="home-quick-start">
-              <img alt="icon_filebook" src="public/playground_assets/icon_filebook.svg" class="button-icon" />
+              <img alt="icon_filebook" src="images/icon_filebook.svg" class="button-icon" />
               <span class="quick-start-btn buttonText">快速入门</span>
             </div>
           </div>
-          <div class="home-scroll-tip">
+          <div class="home-scroll-tip" data-scroll-reveal="enter bottom move 50px over 1.33s after .3s ">
             <span class="home-tip-text sectionIntroText">向下滑动</span>
-            <img alt="arrow_down" src="public/playground_assets/arrow_down.svg" />
+            <img alt="arrow_down" src="images/arrow_down.svg" />
           </div>
         </div>
       </div>
@@ -105,15 +115,15 @@
     <div class="home-section feature-overview-section">
       <div class="feature-overview-content page-content">
         <div class="main-feature-intro">
-          <span class="feature-section-title sectionTitle">
+          <span data-scroll-reveal="enter bottom move 70px over 1s" class="feature-section-title sectionTitle fade-text bg-gradient-white-purple">
             传统开发，就此别过
           </span>
-          <span class="feature-section-sub-title sectionSubTitle">
+          <span data-scroll-reveal="enter bottom move 70px over 1s after .2s " class="feature-section-sub-title sectionSubTitle">
             开启企业数字化转型，为企业的信息化提供坚实的基石
           </span>
-          <div class="feature-intro-cards">
+          <div data-scroll-reveal="enter bottom move 70px over 1s after .4s " class="feature-intro-cards">
             <div class="feature-intro-card">
-              <img alt="image" src="public/playground_assets/flash.svg" class="feature-card-img" />
+              <img alt="image" src="images/flash.svg" class="feature-card-img" />
               <span class="card-intro-title sectionSubTitle">
                 传统开发，就此别过
               </span>
@@ -121,8 +131,8 @@
                 支持可视化设计，让开发人员和业务用户能够通过简单的拖拽、参数配置等方式...
               </span>
             </div>
-            <div class="feature-intro-card">
-              <img alt="image" src="public/playground_assets/cube.svg" class="feature-card-img" />
+            <div data-scroll-reveal="enter bottom move 70px over 1s after .7s " class="feature-intro-card">
+              <img alt="image" src="images/cube.svg" class="feature-card-img" />
               <span class="card-intro-title sectionSubTitle">
                 全面的集成能力
               </span>
@@ -131,8 +141,8 @@
                 解决存量系统与增量系统间的数据连接问题
               </span>
             </div>
-            <div class="feature-intro-card">
-              <img alt="image" src="public/playground_assets/workplace.svg" class="feature-card-img" />
+            <div data-scroll-reveal="enter bottom move 70px over 1s after 1s " class="feature-intro-card">
+              <img alt="image" src="images/workplace.svg" class="feature-card-img" />
               <span class="card-intro-title sectionSubTitle">
                 一键发布多端触达
               </span>
@@ -143,16 +153,16 @@
             </div>
           </div>
         </div>
-        <div class="feature-function-list">
+        <div class="feature-function-list bg-gradient-blue-purple">
           <div class="feature-left-content">
-            <div class="dev-intro-btn sectionIntroText">API 代理</div>
-            <div class="dev-intro-btn sectionIntroText">组织管理</div>
-            <div class="dev-intro-btn sectionIntroText">表单引擎</div>
-            <div class="dev-intro-btn sectionIntroText">数据模型管理</div>
-            <div class="dev-intro-btn sectionIntroText">数据模型设计</div>
-            <div class="dev-intro-btn sectionIntroText">页面集成</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="dev-intro-btn sectionIntroText">API 代理</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="dev-intro-btn sectionIntroText">组织管理</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .1s" class="dev-intro-btn sectionIntroText">表单引擎</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="dev-intro-btn sectionIntroText">数据模型管理</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="dev-intro-btn sectionIntroText">数据模型设计</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .1s" class="dev-intro-btn sectionIntroText">页面集成</div>
           </div>
-          <div class="feature-function-intro">
+          <div data-scroll-reveal="enter top move 50px over 1s after .1s " class="feature-function-intro">
             <span class="feature-intro-title sectionTitle">
               拖拽之间，完成开发
             </span>
@@ -161,12 +171,12 @@
             </span>
           </div>
           <div class="feature-right-content">
-            <div class="dev-intro-btn sectionIntroText">表单引擎</div>
-            <div class="dev-intro-btn sectionIntroText">页面引擎</div>
-            <div class="dev-intro-btn sectionIntroText">权限管理</div>
-            <div class="dev-intro-btn sectionIntroText">工作流引擎</div>
-            <div class="dev-intro-btn sectionIntroText">角色定义</div>
-            <div class="dev-intro-btn sectionIntroText">全生命周期管理</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .1s" class="dev-intro-btn sectionIntroText">表单引擎</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="dev-intro-btn sectionIntroText">页面引擎</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .3s" class="dev-intro-btn sectionIntroText">权限管理</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .1s" class="dev-intro-btn sectionIntroText">工作流引擎</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="dev-intro-btn sectionIntroText">角色定义</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .3s" class="dev-intro-btn sectionIntroText">全生命周期管理</div>
           </div>
         </div>
       </div>
@@ -175,46 +185,46 @@
       <div class="feature-detail-content page-content">
         <div class="feature-detail-content-wrap">
           <div class="feature-detail-intro-text">
-            <span class="buttonText text-black feature-detail-text">表单引擎</span>
-            <span class="sectionIntroTitle text-black feature-detail-text">搭建业务系统，如此简单</span>
-            <span class="sectionIntroDescription text-gray feature-detail-text">
+            <span data-scroll-reveal="enter left move 70px over 1s" class="buttonText text-black feature-detail-text fade-text bg-gradient-blue-purple">表单引擎</span>
+            <span data-scroll-reveal="enter left move 70px over 1s" class="sectionIntroTitle text-black feature-detail-text">搭建业务系统，如此简单</span>
+            <span data-scroll-reveal="enter left move 70px over 1s after .1s"  class="sectionIntroDescription text-gray feature-detail-text">
               让非专业开发人员也能通过拖拉拽的方式，轻而易举的构建业务所需表单
             </span>
-            <div class="feat-function-list">
-              <div class="feature-function-item">
+            <div data-scroll-reveal="enter left move 70px over 1s after .2s"  class="feat-function-list">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_view.svg" />
+                  <img alt="image" src="images/icon_view.svg" />
                 </div>
                 <span>
                   丰富的页面组件
                 </span>
               </div>
-              <div class="feature-function-item">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_setting.svg" />
+                  <img alt="image" src="images/icon_setting.svg" />
                 </div>
                 <span>完善的属性配置</span>
               </div>
-              <div class=" feature-function-item">
+              <div class=" feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_done.svg" />
+                  <img alt="image" src="images/icon_done.svg" />
                 </div>
                 <span>自定义校验规则</span>
               </div>
-              <div class=" feature-function-item">
+              <div class=" feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_data-model.svg" />
+                  <img alt="image" src="images/icon_data-model.svg" />
                 </div>
                 <span>强大的数据联动</span>
               </div>
-              <div class="feature-function-item">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_key.svg" />
+                  <img alt="image" src="images/icon_key.svg" />
                 </div>
                 <span>精细化权限管理</span>
               </div>
             </div>
-            <div class="more-feat-link">
+            <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="more-feat-link">
               <div class="github-btn">
                 <svg viewBox="0 0 877.7142857142857 1024" class="button-icon icon__white">
                   <path
@@ -229,7 +239,7 @@
               </a>
             </div>
           </div>
-          <img alt="form-engine" src="public/playground_assets/img_workflow.svg" loading="lazy"
+          <img data-scroll-reveal="enter right move 70px over 1s" alt="form-engine" src="images/img_workflow.svg" loading="lazy"
             class="feature-detail-img" />
         </div>
       </div>
@@ -238,26 +248,26 @@
       <div class="feature-detail-content page-content">
         <div class="feature-detail-content-wrap row-reverse">
           <div class="feature-detail-intro-text">
-            <span class="buttonText text-white feature-detail-text">工作流引擎</span>
-            <span class="sectionIntroTitle text-white feature-detail-text">业务流程，随时迭代</span>
-            <span class="sectionIntroDescription text-gray feature-detail-text">
+            <span data-scroll-reveal="enter right move 70px over 1s" class="buttonText text-white feature-detail-text fade-text bg-gradient-blue">工作流引擎</span>
+            <span data-scroll-reveal="enter right move 70px over 1s" class="sectionIntroTitle text-white feature-detail-text">业务流程，随时迭代</span>
+            <span data-scroll-reveal="enter right move 70px over 1s after .1s" class="sectionIntroDescription text-gray feature-detail-text">
               工作流引擎覆盖完整的流程生命周期，通过拖拽式完成基本的节点组件例如审批、数据更新、搭建业务审批流或系统自动处理流程等
             </span>
-            <div class="feat-function-list grid-single-col">
-              <div class="feature-function-item">
+            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="feat-function-list grid-single-col">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_gear.svg" />
+                  <img alt="image" src="images/icon_gear.svg" />
                 </div>
-                <span>多种节点类型与配置</span>
+                <span class="fade-text bg-gradient-blue-white">多种节点类型与配置</span>
               </div>
-              <div class="feature-function-item">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_lamp.svg" />
+                  <img alt="image" src="images/icon_lamp.svg" />
                 </div>
-                <span>多种工作流触发方式</span>
+                <span class="fade-text bg-gradient-blue-white">多种工作流触发方式</span>
               </div>
             </div>
-            <div class="more-feat-link">
+            <div data-scroll-reveal="enter right move 70px over 1s after .3s" class="more-feat-link">
               <div class="github-btn">
                 <svg viewBox="0 0 877.7142857142857 1024" class="button-icon icon__white">
                   <path
@@ -272,7 +282,7 @@
               </a>
             </div>
           </div>
-          <img alt="form-engine" src="public/playground_assets/form-engine-img.svg" loading="lazy"
+          <img data-scroll-reveal="enter left move 70px over 1s" alt="form-engine" src="images/form-engine-img.svg" loading="lazy"
             class="feature-detail-img" />
         </div>
       </div>
@@ -281,32 +291,32 @@
       <div class="feature-detail-content page-content">
         <div class="feature-detail-content-wrap">
           <div class="feature-detail-intro-text">
-            <span class="buttonText text-black feature-detail-text">开放系统</span>
-            <span class="sectionIntroTitle text-black feature-detail-text">让数据互联互通</span>
-            <span class="sectionIntroDescription text-gray feature-detail-text">
+            <span data-scroll-reveal="enter left move 70px over 1s" class="buttonText text-black feature-detail-text fade-text bg-gradient-blue-purple">开放系统</span>
+            <span data-scroll-reveal="enter left move 70px over 1s" class="sectionIntroTitle text-black feature-detail-text">让数据，互联互通</span>
+            <span data-scroll-reveal="enter left move 70px over 1s after .1s" class="sectionIntroDescription text-gray feature-detail-text">
               提供丰富的开发接口和强大的插件机制，实现与外部独立的系统进行通信或集成，打通数据孤岛
             </span>
-            <div class="feat-function-list grid-single-col">
-              <div class="feature-function-item">
+            <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="feat-function-list grid-single-col">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_api.svg" />
+                  <img alt="image" src="images/icon_api.svg" />
                 </div>
                 <span>支持代理第三方API</span>
               </div>
-              <div class="feature-function-item">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_eye.svg" />
+                  <img alt="image" src="images/icon_eye.svg" />
                 </div>
                 <span>支持暴露内部表单、工作流</span>
               </div>
-              <div class=" feature-function-item">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_puzzle.svg" />
+                  <img alt="image" src="images/icon_puzzle.svg" />
                 </div>
                 <span>支持不同粒度方案集成</span>
               </div>
             </div>
-            <div class="more-feat-link">
+            <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="more-feat-link">
               <div class="github-btn">
                 <svg viewBox="0 0 877.7142857142857 1024" class="button-icon icon__white">
                   <path
@@ -321,7 +331,7 @@
               </a>
             </div>
           </div>
-          <img alt="form-engine" src="public/playground_assets/img_data-manage.svg" loading="lazy"
+          <img data-scroll-reveal="enter right move 70px over 1s" alt="form-engine" src="images/img_data-manage.svg" loading="lazy"
             class="feature-detail-img" />
         </div>
       </div>
@@ -330,33 +340,33 @@
       <div class="feature-detail-content page-content">
         <div class="feature-detail-content-wrap row-reverse item-center">
           <div class="feature-detail-intro-text">
-            <span class="buttonText text-white feature-detail-text">不受限制</span>
-            <span class="sectionIntroTitle text-white feature-detail-text">部署，自由开发</span>
-            <span class="sectionIntroDescription text-gray feature-detail-text">
+            <span data-scroll-reveal="enter right move 70px over 1s" class="buttonText text-white feature-detail-text fade-text bg-gradient-blue">不受限制</span>
+            <span data-scroll-reveal="enter right move 70px over 1s" class="sectionIntroTitle text-white feature-detail-text">部署，自由开发</span>
+            <span data-scroll-reveal="enter right move 70px over 1s after .1s" class="sectionIntroDescription text-gray feature-detail-text">
               全象是一个云原生、完全容器化的软件平台，支持公有云部署、本地化部署
             </span>
-            <div class="feat-function-list grid-single-col">
-              <div class="feature-function-item">
+            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="feat-function-list grid-single-col">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_disk.svg" />
+                  <img alt="image" src="images/icon_disk.svg" />
                 </div>
-                <span>支持私有部署</span>
+                <span class="fade-text bg-gradient-blue-white">支持私有部署</span>
               </div>
-              <div class="feature-function-item">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_cloud.svg" />
+                  <img alt="image" src="images/icon_cloud.svg" />
                 </div>
-                <span>基于Kubernetes的容器化部署</span>
+                <span class="fade-text bg-gradient-blue-white">基于Kubernetes的容器化部署</span>
               </div>
-              <div class="feature-function-item">
+              <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
-                  <img alt="image" src="public/playground_assets/icon_file.svg" />
+                  <img alt="image" src="images/icon_file.svg" />
                 </div>
-                <span>系统日志可查看操作记录</span>
+                <span class="fade-text bg-gradient-blue-white">系统日志可查看操作记录</span>
               </div>
             </div>
           </div>
-          <img alt="form-engine" src="public/playground_assets/img_frame.svg" loading="lazy" />
+          <img data-scroll-reveal="enter left move 70px over 1s" alt="form-engine" src="images/img_frame.svg" loading="lazy" />
         </div>
       </div>
     </div>
@@ -379,7 +389,7 @@
   <footer class="home-footer">
     <div class="footer-wrap page-content">
       <div class="home-logo">
-        <img alt="quanxiang_logo" src="public/playground_assets/brand.svg" />
+        <img alt="quanxiang_logo" src="images/brand.svg" />
       </div>
       <div class="links-group-wrap">
         <div class="links-group">
@@ -425,29 +435,29 @@
       <div class="contact-wrap">
         <span class="contact-title buttonText">关注或联系我们</span>
         <div class="contact-info">
-          <img alt="scan" src="public/playground_assets/icon_scan.svg" />
+          <img alt="scan" src="images/icon_scan.svg" />
           <span class="contact-text sectionIntroText">关注全象随时了解动态与资讯</span>
         </div>
         <div class="contact-media">
-          <img alt="QR_Code" src="public/playground_assets/quianxiang_qr.svg" class="home-qr-code" />
+          <img alt="QR_Code" src="images/quianxiang_qr.svg" class="home-qr-code" />
           <div class="media-list">
             <div class="media-item">
-              <img alt="twitter" src="public/playground_assets/icon_twitter.svg" />
+              <img alt="twitter" src="images/icon_twitter.svg" />
               <span class="contact-text sectionIntroText">Twitter</span>
             </div>
             <div class="media-item">
-              <img alt="slack" src="public/playground_assets/icon_slack.svg" />
+              <img alt="slack" src="images/icon_slack.svg" />
               <span class="contact-text sectionIntroText">Slack</span>
             </div>
             <div class="media-item">
-              <img alt="github" src="public/playground_assets/icon_github.svg" />
+              <img alt="github" src="images/icon_github.svg" />
               <span class="contact-text sectionIntroText">GitHub</span>
             </div>
           </div>
         </div>
         <div class="contact-separator"></div>
         <div class="contact-email">
-          <img alt="icon_email" src="public/playground_assets/icon_email.svg" />
+          <img alt="icon_email" src="images/icon_email.svg" />
           <span class="contact-text sectionIntroText">quanxiangcloud@yunify.com</span>
         </div>
       </div>
@@ -458,5 +468,8 @@
     </span>
   </footer>
 </body>
-
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/scroll-text.js"></script>
+<script src="./js/scroll-reveal.js"></script>
+<script src="./js/index.js"></script>
 </html>
