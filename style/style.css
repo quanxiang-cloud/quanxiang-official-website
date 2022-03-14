@@ -66,7 +66,7 @@ body {
   border-radius      : 20px;
   background-color   : var(--dl-color-black-dev-card-bg);
   background-image   : url(/images/img_feature-card-bg.png);
-  background-size: 100% 100%;
+  background-size    : 100% 100%;
   background-repeat  : no-repeat;
   background-position: center;
   display            : flex;
@@ -133,10 +133,10 @@ body {
   align-items    : center;
   border-radius  : 8px;
   justify-content: center;
-  transition: 300ms opacity ease-in-out;
+  transition     : 300ms opacity ease-in-out;
 }
 
-.github-btn:hover{
+.github-btn:hover {
   opacity: .8;
 }
 
@@ -300,57 +300,58 @@ body {
 }
 
 .home-burger-menu {
-  width: 20px;
-  height: 20px;
+  width  : 20px;
+  height : 20px;
   display: none;
 }
 
 .home-icon {
-  width  : var(--dl-size-size-xsmall);
-  height : var(--dl-size-size-xsmall);
+  width : var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
 }
 
 .header-mobile-menu {
-  display: flex;
-  flex-direction: column;
-  top             : 0px;
-  left            : 0px;
-  width           : 100%;
-  display         : none;
-  padding: 10px 20px 20px 20px;
-  box-sizing: border-box;
-  z-index         : 100;
-  position        : absolute;
-  flex-direction  : column;
-  justify-content : space-between;
-  background: var(--dl-color-gray-white);
+  display        : flex;
+  flex-direction : column;
+  top            : 0px;
+  left           : 0px;
+  width          : 100%;
+  display        : none;
+  padding        : 10px 20px 20px 20px;
+  box-sizing     : border-box;
+  z-index        : 100;
+  position       : absolute;
+  flex-direction : column;
+  justify-content: space-between;
+  background     : var(--dl-color-gray-white);
 }
 
-.mobile-menu-brand{
-  width: 100%;
-  display: flex;
+.mobile-menu-brand {
+  width          : 100%;
+  display        : flex;
   justify-content: space-between;
-  align-items: center;
+  align-items    : center;
 }
 
 .home-close-mobile-menu {
-  width: 20px;
-  height: 20px;
+  width          : 20px;
+  height         : 20px;
   display        : flex;
   align-items    : center;
   justify-content: center;
 }
-.header-mobile-menu svg{
-  width: 30px;
+
+.header-mobile-menu svg {
+  width : 30px;
   height: 30px;
 }
 
-.mobile-menu-content{
-  margin-top: 40px;
-  display: flex;
-  flex: 1;
+.mobile-menu-content {
+  margin-top    : 40px;
+  display       : flex;
+  flex          : 1;
   flex-direction: column;
-  gap:10px;
+  gap           : 10px;
 }
 
 .home-star-btn {
@@ -365,21 +366,21 @@ body {
   border-radius   : var(--dl-radius-radius-radius4);
   justify-content : center;
   background-color: var(--dl-color-gray-0.5);
-  cursor: pointer;
-  transition: 300ms all ease-in-out;
-  color: var(--dl-color-gray-6);
+  cursor          : pointer;
+  transition      : 300ms all ease-in-out;
+  color           : var(--dl-color-gray-6);
 }
 
-.home-star-btn svg{
+.home-star-btn svg {
   fill: var(--dl-color-gray-6);
 }
 
 .home-star-btn:hover {
   background-color: #375FF3;
-  color: white;
+  color           : white;
 }
 
-.home-star-btn:hover svg{
+.home-star-btn:hover svg {
   fill: white;
 }
 
@@ -388,8 +389,7 @@ body {
   height: 16px;
 }
 
-.home-start-btn-text {
-}
+.home-start-btn-text {}
 
 .home-main {
   width: 100%;
@@ -538,27 +538,56 @@ body {
 }
 
 
-
-.feature-card-img {
-  top       : -85px;
+.feature-intro-card-img-wrap{
+  position  : absolute;
+  top       : -70px;
   left      : auto;
   right     : auto;
-  width     : 90px;
-  position  : absolute;
-  object-fit: cover;
-  transition: 700ms transform cubic-bezier(0.66, 0.00, 0.34, 1.00) ;
-  transform: translateY(0px);
+  width     : 70px;
 }
 
-.cylinder{
+.feature-card-img {
+  position  : absolute;
+  right     : auto;
+  width     : 70px;
+  object-fit: cover;
+  transition: 700ms transform cubic-bezier(0.66, 0.00, 0.34, 1.00);
+  transform : translateY(0px);
+}
+
+.cube-left,
+.cube-right {
+  width   : 23px;
+  position: absolute;
+}
+
+.cube-left {
+  left: -13px;
+  top: 24px;
+}
+
+.cube-right {
+  right: -12px;
+  top: 30px;
+}
+
+.delay-float {
   transition-delay: 100ms;
+}
+
+.pc-monitor{
+  width: 50px;
+}
+
+.pc-monitor-aside{
+  width: 90px;
+  left: -22px;
+  top: 8px;
 }
 
 .feature-intro-card:hover .feature-card-img {
   transform: translateY(-16px);
 }
-
-
 
 .card-intro-title {
   color        : var(--dl-color-gray-white);
@@ -665,7 +694,7 @@ body {
 }
 
 .feature-detail-section-dark {
-  height: 760px;
+  height             : 760px;
   background-size    : cover;
   background-image   : url("/images/fade-bg.svg");
   background-repeat  : repeat-y;
@@ -788,11 +817,11 @@ body {
 }
 
 .media-list {
-  padding-top: 10px;
-  height         : 100%;
-  display        : flex;
-  flex-direction : column;
-  gap: 10px;
+  padding-top   : 10px;
+  height        : 100%;
+  display       : flex;
+  flex-direction: column;
+  gap           : 10px;
 }
 
 .media-item {
@@ -844,7 +873,7 @@ body {
     padding: 40px;
     height : auto;
   }
-  
+
   .feature-function-list {
     flex-direction: column;
     padding       : 20px;
@@ -856,7 +885,7 @@ body {
 
   .feature-detail-intro-text {
     align-items: center;
-    text-align: center;
+    text-align : center;
   }
 
 
@@ -865,7 +894,8 @@ body {
     justify-content: center;
   }
 
-  .feature-detail-section, .feature-detail-section-dark {
+  .feature-detail-section,
+  .feature-detail-section-dark {
     height: auto;
   }
 
@@ -885,7 +915,7 @@ body {
     padding-right: 20px;
   }
 
-  .feature-function-item{
+  .feature-function-item {
     justify-content: center;
   }
 }
@@ -899,10 +929,11 @@ body {
 }
 
 @media(max-width: 767px) {
-  .home-intro-title{
-    flex-wrap: wrap;
+  .home-intro-title {
+    flex-wrap  : wrap;
     align-items: center;
   }
+
   .pageTitle {
     font-size  : 32px;
     line-height: 44px;
@@ -922,24 +953,27 @@ body {
     justify-content: center;
   }
 
-  .home-star-btn{
+  .home-star-btn {
     display: none;
   }
 
 }
 
 @media(max-width: 479px) {
-  .feature-detail-content-wrap{
+  .feature-detail-content-wrap {
     padding: 40px 10px;
   }
+
   .feature-detail-img {
     width: 350px;
   }
-  .footer-wrap{
+
+  .footer-wrap {
     flex-direction: column;
-    gap: 30px;
+    gap           : 30px;
   }
-  .get-start-app-title{
+
+  .get-start-app-title {
     font-size: 30px;
   }
 }
