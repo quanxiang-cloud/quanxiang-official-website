@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="zh">
 
 <head>
-  <title>QXP home page</title>
-  <meta property="og:title" content="QXP home page" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
+  <title>全象——开源低代码平台，加速企业数智化转型。</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="title" content="全象——开源低代码平台，加速企业数智化转型。">
+  <meta name="description" content="全象——开源低代码平台，加速企业数智化转型。">
+  <meta name="keywords" content="低代码,开源，全象云，青云，智能办公">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+  <meta charset="UTF-8">
   <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon" />
-
   <link rel="stylesheet" href="./style/reset.css" />
   <link rel="stylesheet" href="./style/style.css" />
 </head>
@@ -20,55 +21,42 @@
       <div class="home-nav">
         <nav class="home-nav-links">
           <a href="/" class="home-nav-link-text buttonText">首页</a>
-          <a href="/" class="home-nav-link-text buttonText">文档</a>
+          <a target="_blank" href="https://docs.clouden.io" class="home-nav-link-text buttonText">文档</a>
           <a href="/" class="home-nav-link-text buttonText">博客</a>
           <a href="/" class="home-nav-link-text buttonText">社区</a>
         </nav>
       </div>
-      <div data-type="BurgerMenu" class="home-burger-menu">
-        <svg viewBox="0 0 1024 1024" class="home-icon">
+      <div class="header-mobile-menu">
+        <div class="mobile-menu-brand">
+          <img alt="image" src="images/brand.svg" class="home-brand" />
+          <div class="home-close-mobile-menu">
+            <svg viewBox="0 0 1024 1024">
+              <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <nav class="mobile-menu-content">
+          <a href="/" class="home-nav-link-text buttonText">首页</a>
+          <a target="_blank" href="https://docs.clouden.io" class="home-nav-link-text buttonText">文档</a>
+          <a href="/" class="home-nav-link-text buttonText">博客</a>
+          <a href="/" class="home-nav-link-text buttonText">社区</a>
+        </nav>
+      </div>
+      <a href="https://github.com/quanxiang-cloud" target="_blank" class="home-star-btn">
+        <svg viewBox="0 0 877.7142857142857 1024" class="button-icon">
+          <path
+            d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z">
+          </path>
+        </svg>
+        <span class="home-start-btn-text buttonText">Star</span>
+      </a>
+      <div class="home-burger-menu">
+        <svg viewBox="0 0 1024 1024">
           <path
             d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
           </path>
         </svg>
-      </div>
-      <div data-type="MobileMenu" class="home-mobile-menu">
-        <div class="home-nav1">
-          <div class="home-container01">
-            <img alt="image" src="images/brand.svg" class="home-brand" />
-            <div data-type="CloseMobileMenu" class="home-close-mobile-menu">
-              <svg viewBox="0 0 1024 1024" class="home-icon02">
-                <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
-                </path>
-              </svg>
-            </div>
-          </div>
-          <nav class="navigation-links-nav navigation-links-root-class-name16">
-            <span class="navigation-links-text">首页</span>
-            <span class="navigation-links-text">文档</span>
-            <span class="navigation-links-text">博客</span>
-            <span class="navigation-links-text">社区</span>
-          </nav>
-        </div>
-        <div>
-          <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
-            <path
-              d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z">
-            </path>
-          </svg><svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
-            <path
-              d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z">
-            </path>
-          </svg><svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
-            <path
-              d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z">
-            </path>
-          </svg>
-        </div>
-      </div>
-      <div class="home-star-btn">
-        <img alt="icon_github" src="images/icon_github.svg" class="home-github" />
-        <span class="home-start-btn-text buttonText">Star</span>
       </div>
     </header>
   </div>
@@ -81,49 +69,52 @@
             <div text-roll-mask class="roll-mask">
               <span class="fade-text bg-gradient-blue-purple">业务系统</span>
               <span class="fade-text bg-gradient-blue-purple">工作流程</span>
-              <span class="fade-text bg-gradient-blue-purple">自定页面</span>
+              <span class="fade-text bg-gradient-blue-purple">数据模型</span>
             </div>，如此<div text-roll-mask class="roll-mask short-title">
               <span class="fade-text bg-gradient-blue-purple">简单</span>
               <span class="fade-text bg-gradient-blue-purple">敏捷</span>
-              <span class="fade-text bg-gradient-blue-purple">快速</span>
+              <span class="fade-text bg-gradient-blue-purple">高效</span>
             </div>
           </h1>
           <h2 class="home-intro-sub-title pageSubTitle">
             全象开源低代码平台，加速企业数智化转型
           </h2>
           <div class="first-page-btns">
-            <div class="github-btn">
+            <a class="github-btn" href="https://github.com/quanxiang-cloud" target="_blank">
               <svg viewBox="0 0 877.7142857142857 1024" class="button-icon icon__white">
                 <path
                   d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z">
                 </path>
               </svg>
               <span class="get-project-btn buttonText">获取项目</span>
-            </div>
-            <div class="home-quick-start">
+            </a>
+            <a class="home-quick-start" href="https://docs.clouden.io/quickstart/app_modeling/" target="_blank">
               <img alt="icon_filebook" src="images/icon_filebook.svg" class="button-icon" />
               <span class="quick-start-btn buttonText">快速入门</span>
-            </div>
-          </div>
-          <div class="home-scroll-tip" data-scroll-reveal="enter bottom move 50px over 1.33s after .3s ">
-            <span class="home-tip-text sectionIntroText">向下滑动</span>
-            <img alt="arrow_down" src="images/arrow_down.svg" />
+            </a>
           </div>
         </div>
+      </div>
+      <div class="home-scroll-tip" data-scroll-reveal="enter bottom move 50px over 1.33s after .3s ">
+        <span class="home-tip-text sectionIntroText">向下滑动</span>
+        <img alt="arrow_down" src="images/arrow_down.svg" />
       </div>
     </div>
     <div class="home-section feature-overview-section">
       <div class="feature-overview-content page-content">
         <div class="main-feature-intro">
-          <span data-scroll-reveal="enter bottom move 70px over 1s" class="feature-section-title sectionTitle fade-text bg-gradient-white-purple">
+          <span data-scroll-reveal="enter bottom move 100px over 1s after .2s"
+            class="feature-section-title sectionTitle fade-text bg-gradient-white-purple">
             传统开发，就此别过
           </span>
-          <span data-scroll-reveal="enter bottom move 70px over 1s after .2s " class="feature-section-sub-title sectionSubTitle">
+          <span data-scroll-reveal="enter bottom move 100px over 1s after .2s "
+            class="feature-section-sub-title sectionSubTitle">
             开启企业数字化转型，为企业的信息化提供坚实的基石
           </span>
           <div data-scroll-reveal="enter bottom move 70px over 1s after .4s " class="feature-intro-cards">
             <div class="feature-intro-card">
-              <img alt="image" src="images/flash.svg" class="feature-card-img" />
+              <img alt="image" src="images/img_flash.png" class="feature-card-img" />
+              <img alt="image" src="images/img_cylinder.png" class="feature-card-img cylinder" />
               <span class="card-intro-title sectionSubTitle">
                 传统开发，就此别过
               </span>
@@ -154,14 +145,6 @@
           </div>
         </div>
         <div class="feature-function-list bg-gradient-blue-purple">
-          <div class="feature-left-content">
-            <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="dev-intro-btn sectionIntroText">API 代理</div>
-            <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="dev-intro-btn sectionIntroText">组织管理</div>
-            <div data-scroll-reveal="enter left move 70px over 1s after .1s" class="dev-intro-btn sectionIntroText">表单引擎</div>
-            <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="dev-intro-btn sectionIntroText">数据模型管理</div>
-            <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="dev-intro-btn sectionIntroText">数据模型设计</div>
-            <div data-scroll-reveal="enter left move 70px over 1s after .1s" class="dev-intro-btn sectionIntroText">页面集成</div>
-          </div>
           <div data-scroll-reveal="enter top move 50px over 1s after .1s " class="feature-function-intro">
             <span class="feature-intro-title sectionTitle">
               拖拽之间，完成开发
@@ -170,13 +153,33 @@
               围绕应用的设计、开发、部署、运维，进行全生命周期管理
             </span>
           </div>
+          <div class="feature-left-content">
+            <div data-scroll-reveal="enter left move 70px over 1s after .4s" class="feature-intro-label sectionIntroText">API
+              代理</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="feature-intro-label sectionIntroText">组织管理
+            </div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="feature-intro-label sectionIntroText">表单引擎
+            </div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .4s" class="feature-intro-label sectionIntroText">
+              数据模型管理</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="feature-intro-label sectionIntroText">
+              数据模型设计</div>
+            <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="feature-intro-label sectionIntroText">页面集成
+            </div>
+          </div>
           <div class="feature-right-content">
-            <div data-scroll-reveal="enter right move 70px over 1s after .1s" class="dev-intro-btn sectionIntroText">表单引擎</div>
-            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="dev-intro-btn sectionIntroText">页面引擎</div>
-            <div data-scroll-reveal="enter right move 70px over 1s after .3s" class="dev-intro-btn sectionIntroText">权限管理</div>
-            <div data-scroll-reveal="enter right move 70px over 1s after .1s" class="dev-intro-btn sectionIntroText">工作流引擎</div>
-            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="dev-intro-btn sectionIntroText">角色定义</div>
-            <div data-scroll-reveal="enter right move 70px over 1s after .3s" class="dev-intro-btn sectionIntroText">全生命周期管理</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="feature-intro-label sectionIntroText">
+              表单引擎</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .3s" class="feature-intro-label sectionIntroText">
+              页面引擎</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .4s" class="feature-intro-label sectionIntroText">
+              权限管理</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="feature-intro-label sectionIntroText">
+              全生命周期管理</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .3s" class="feature-intro-label sectionIntroText">
+              工作流引擎</div>
+            <div data-scroll-reveal="enter right move 70px over 1s after .4s" class="feature-intro-label sectionIntroText">
+              角色定义</div>
           </div>
         </div>
       </div>
@@ -185,12 +188,15 @@
       <div class="feature-detail-content page-content">
         <div class="feature-detail-content-wrap">
           <div class="feature-detail-intro-text">
-            <span data-scroll-reveal="enter left move 70px over 1s" class="buttonText text-black feature-detail-text fade-text bg-gradient-blue-purple">表单引擎</span>
-            <span data-scroll-reveal="enter left move 70px over 1s" class="sectionIntroTitle text-black feature-detail-text">搭建业务系统，如此简单</span>
-            <span data-scroll-reveal="enter left move 70px over 1s after .1s"  class="sectionIntroDescription text-gray feature-detail-text">
+            <span data-scroll-reveal="enter left move 70px over 1s"
+              class="buttonText text-black feature-detail-text fade-text bg-gradient-blue-purple">表单引擎</span>
+            <span data-scroll-reveal="enter left move 70px over 1s"
+              class="sectionIntroTitle text-black feature-detail-text">搭建业务系统，如此简单</span>
+            <span data-scroll-reveal="enter left move 70px over 1s after .1s"
+              class="sectionIntroDescription text-gray feature-detail-text">
               让非专业开发人员也能通过拖拉拽的方式，轻而易举的构建业务所需表单
             </span>
-            <div data-scroll-reveal="enter left move 70px over 1s after .2s"  class="feat-function-list">
+            <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="feat-function-list">
               <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
                   <img alt="image" src="images/icon_view.svg" />
@@ -225,22 +231,22 @@
               </div>
             </div>
             <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="more-feat-link">
-              <div class="github-btn">
+              <a class="github-btn" href="https://github.com/quanxiang-cloud" target="_blank">
                 <svg viewBox="0 0 877.7142857142857 1024" class="button-icon icon__white">
                   <path
                     d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z">
                   </path>
                 </svg>
                 <span class="buttonText text-white">立即下载</span>
-              </div>
-              <a href="https://docs.clouden.io" target="_blank" rel="noreferrer noopener"
-                class="more-link sectionIntroText">
+              </a>
+              <a href="https://docs.clouden.io" target="_blank" class="more-link sectionIntroText">
                 了解更多 &gt;
               </a>
             </div>
           </div>
-          <img data-scroll-reveal="enter right move 70px over 1s" alt="form-engine" src="images/img_workflow.svg" loading="lazy"
-            class="feature-detail-img" />
+          <div data-scroll-reveal="enter right move 70px over 1s" class="feature-detail-img">
+            <img alt="form-engine" src="images/img_workflow.svg" loading="lazy" />
+          </div>
         </div>
       </div>
     </div>
@@ -248,12 +254,16 @@
       <div class="feature-detail-content page-content">
         <div class="feature-detail-content-wrap row-reverse">
           <div class="feature-detail-intro-text">
-            <span data-scroll-reveal="enter right move 70px over 1s" class="buttonText text-white feature-detail-text fade-text bg-gradient-blue">工作流引擎</span>
-            <span data-scroll-reveal="enter right move 70px over 1s" class="sectionIntroTitle text-white feature-detail-text">业务流程，随时迭代</span>
-            <span data-scroll-reveal="enter right move 70px over 1s after .1s" class="sectionIntroDescription text-gray feature-detail-text">
+            <span data-scroll-reveal="enter right move 70px over 1s"
+              class="buttonText text-white feature-detail-text fade-text bg-gradient-blue">工作流引擎</span>
+            <span data-scroll-reveal="enter right move 70px over 1s"
+              class="sectionIntroTitle text-white feature-detail-text">业务流程，随时迭代</span>
+            <span data-scroll-reveal="enter right move 70px over 1s after .1s"
+              class="sectionIntroDescription text-gray feature-detail-text">
               工作流引擎覆盖完整的流程生命周期，通过拖拽式完成基本的节点组件例如审批、数据更新、搭建业务审批流或系统自动处理流程等
             </span>
-            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="feat-function-list grid-single-col">
+            <div data-scroll-reveal="enter right move 70px over 1s after .2s"
+              class="feat-function-list grid-single-col">
               <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
                   <img alt="image" src="images/icon_gear.svg" />
@@ -268,22 +278,22 @@
               </div>
             </div>
             <div data-scroll-reveal="enter right move 70px over 1s after .3s" class="more-feat-link">
-              <div class="github-btn">
+              <a class="github-btn" href="https://github.com/quanxiang-cloud" target="_blank">
                 <svg viewBox="0 0 877.7142857142857 1024" class="button-icon icon__white">
                   <path
                     d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z">
                   </path>
                 </svg>
                 <span class="buttonText text-white">立即下载</span>
-              </div>
+              </a>
               <a href="https://docs.clouden.io" target="_blank" rel="noreferrer noopener"
                 class="more-link sectionIntroText">
                 了解更多 &gt;
               </a>
             </div>
           </div>
-          <img data-scroll-reveal="enter left move 70px over 1s" alt="form-engine" src="images/form-engine-img.svg" loading="lazy"
-            class="feature-detail-img" />
+          <img data-scroll-reveal="enter left move 70px over 1s" alt="form-engine" src="images/form-engine-img.svg"
+            loading="lazy" class="feature-detail-img" />
         </div>
       </div>
     </div>
@@ -291,9 +301,12 @@
       <div class="feature-detail-content page-content">
         <div class="feature-detail-content-wrap">
           <div class="feature-detail-intro-text">
-            <span data-scroll-reveal="enter left move 70px over 1s" class="buttonText text-black feature-detail-text fade-text bg-gradient-blue-purple">开放系统</span>
-            <span data-scroll-reveal="enter left move 70px over 1s" class="sectionIntroTitle text-black feature-detail-text">让数据，互联互通</span>
-            <span data-scroll-reveal="enter left move 70px over 1s after .1s" class="sectionIntroDescription text-gray feature-detail-text">
+            <span data-scroll-reveal="enter left move 70px over 1s"
+              class="buttonText text-black feature-detail-text fade-text bg-gradient-blue-purple">开放系统</span>
+            <span data-scroll-reveal="enter left move 70px over 1s"
+              class="sectionIntroTitle text-black feature-detail-text">让数据，互联互通</span>
+            <span data-scroll-reveal="enter left move 70px over 1s after .1s"
+              class="sectionIntroDescription text-gray feature-detail-text">
               提供丰富的开发接口和强大的插件机制，实现与外部独立的系统进行通信或集成，打通数据孤岛
             </span>
             <div data-scroll-reveal="enter left move 70px over 1s after .2s" class="feat-function-list grid-single-col">
@@ -317,22 +330,22 @@
               </div>
             </div>
             <div data-scroll-reveal="enter left move 70px over 1s after .3s" class="more-feat-link">
-              <div class="github-btn">
+              <a class="github-btn" href="https://github.com/quanxiang-cloud" target="_blank">
                 <svg viewBox="0 0 877.7142857142857 1024" class="button-icon icon__white">
                   <path
                     d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z">
                   </path>
                 </svg>
                 <span class="buttonText text-white">立即下载</span>
-              </div>
+              </a>
               <a href="https://docs.clouden.io" target="_blank" rel="noreferrer noopener"
                 class="more-link sectionIntroText">
                 了解更多 &gt;
               </a>
             </div>
           </div>
-          <img data-scroll-reveal="enter right move 70px over 1s" alt="form-engine" src="images/img_data-manage.svg" loading="lazy"
-            class="feature-detail-img" />
+          <img data-scroll-reveal="enter right move 70px over 1s" alt="form-engine" src="images/img_data-manage.svg"
+            loading="lazy" class="feature-detail-img" />
         </div>
       </div>
     </div>
@@ -340,12 +353,16 @@
       <div class="feature-detail-content page-content">
         <div class="feature-detail-content-wrap row-reverse item-center">
           <div class="feature-detail-intro-text">
-            <span data-scroll-reveal="enter right move 70px over 1s" class="buttonText text-white feature-detail-text fade-text bg-gradient-blue">不受限制</span>
-            <span data-scroll-reveal="enter right move 70px over 1s" class="sectionIntroTitle text-white feature-detail-text">部署，自由开发</span>
-            <span data-scroll-reveal="enter right move 70px over 1s after .1s" class="sectionIntroDescription text-gray feature-detail-text">
+            <span data-scroll-reveal="enter right move 70px over 1s"
+              class="buttonText text-white feature-detail-text fade-text bg-gradient-blue">不受限制</span>
+            <span data-scroll-reveal="enter right move 70px over 1s"
+              class="sectionIntroTitle text-white feature-detail-text">部署，自由开发</span>
+            <span data-scroll-reveal="enter right move 70px over 1s after .1s"
+              class="sectionIntroDescription text-gray feature-detail-text">
               全象是一个云原生、完全容器化的软件平台，支持公有云部署、本地化部署
             </span>
-            <div data-scroll-reveal="enter right move 70px over 1s after .2s" class="feat-function-list grid-single-col">
+            <div data-scroll-reveal="enter right move 70px over 1s after .2s"
+              class="feat-function-list grid-single-col">
               <div class="feature-function-item buttonText">
                 <div class="feature-function-icon">
                   <img alt="image" src="images/icon_disk.svg" />
@@ -366,7 +383,8 @@
               </div>
             </div>
           </div>
-          <img data-scroll-reveal="enter left move 70px over 1s" alt="form-engine" src="images/img_frame.svg" loading="lazy" />
+          <img data-scroll-reveal="enter left move 70px over 1s" alt="form-engine" src="images/img_frame.svg"
+            loading="lazy" />
         </div>
       </div>
     </div>
@@ -396,15 +414,15 @@
           <span class="links-title buttonText">
             产品
           </span>
-          <span class="links-text sectionIntroText">
+          <a class="links-text sectionIntroText" href="https://docs.clouden.io/fn/permission_tree/">
             功能特点
-          </span>
-          <span class="links-text sectionIntroText">
+          </a>
+          <a class="links-text sectionIntroText" href="https://docs.clouden.io/quickstart/app_modeling/">
             快速入门
-          </span>
-          <span class="links-text sectionIntroText">
+          </a>
+          <a class="links-text sectionIntroText" href="https://docs.clouden.io/news/product_news/">
             产品动态
-          </span>
+          </a>
           <span class="links-text sectionIntroText">
             发布计划
           </span>
@@ -416,17 +434,17 @@
           <span class="links-text sectionIntroText">
             博客
           </span>
-          <span class="links-text sectionIntroText">
+          <a class="links-text sectionIntroText" href="https://docs.clouden.io">
             文档中心
-          </span>
+          </a>
         </div>
         <div class="links-group">
           <span class="links-title buttonText">
             社区
           </span>
-          <span class="links-text sectionIntroText">
+          <a class="links-text sectionIntroText" href="https://github.com/quanxiang-cloud">
             GitHub
-          </span>
+          </a>
           <span class="links-text sectionIntroText">
             中文论坛
           </span>
@@ -458,7 +476,8 @@
         <div class="contact-separator"></div>
         <div class="contact-email">
           <img alt="icon_email" src="images/icon_email.svg" />
-          <span class="contact-text sectionIntroText">quanxiangcloud@yunify.com</span>
+          <a class="contact-text sectionIntroText"
+            href="mailto: quanxiangcloud@yunify.com">quanxiangcloud@yunify.com</a>
         </div>
       </div>
     </div>
@@ -472,4 +491,5 @@
 <script src="./js/scroll-text.js"></script>
 <script src="./js/scroll-reveal.js"></script>
 <script src="./js/index.js"></script>
+
 </html>
