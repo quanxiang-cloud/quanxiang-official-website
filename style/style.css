@@ -976,11 +976,7 @@ body {
     padding: 40px 10px;
   }
 
-  .feature-detail-img {
-    width: 350px;
-  }
-
-  .feature-detail-video {
+  .feature-detail-video-wrap {
     width: 350px;
   }
 
