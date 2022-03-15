@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon" />
   <link rel="stylesheet" href="./style/reset.css" />
   <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/video-js.css" />
 </head>
 
 <body>
@@ -265,8 +266,12 @@
               </a>
             </div>
           </div>
-          <div data-scroll-reveal="enter right move 70px over 1s" class="feature-detail-img">
-            <img alt="form-engine" src="images/img_form-engine.png" loading="lazy" />
+          <div data-scroll-reveal="enter right move 70px over 1s" class="feature-detail-video-wrap">
+            <video id="my-video" class="video-js vjs-big-play-centered vjs-16-9 feature-detail-video" preload="false" autoplay muted loop
+              poster="./images/img_form-engine.png" data-setup="{}">
+              <source src="./videos/form-engine.mp4" type="video/mp4" />
+              <p class="vjs-no-js">请开启 JavaScript 以浏览内容</p>
+            </video>
           </div>
         </div>
       </div>
@@ -313,8 +318,13 @@
               </a>
             </div>
           </div>
-          <img data-scroll-reveal="enter left move 70px over 1s" alt="workflow" src="images/img_workflow.png"
-            loading="lazy" class="feature-detail-img" />
+          <div data-scroll-reveal="enter left move 70px over 1s" class="feature-detail-video-wrap">
+            <video id="my-video" class="video-js vjs-big-play-centered vjs-16-9 feature-detail-video" preload="false" autoplay muted loop
+              poster="./images/img_workflow.png" data-setup="{}">
+              <source src="./videos/workflow.mp4" type="video/mp4" />
+              <p class="vjs-no-js">请开启 JavaScript 以浏览内容</p>
+            </video>
+          </div>
         </div>
       </div>
     </div>
@@ -365,8 +375,13 @@
               </a>
             </div>
           </div>
-          <img data-scroll-reveal="enter right move 70px over 1s" alt="api-proxy" src="images/img_api-proxy.png"
-            loading="lazy" class="feature-detail-img" />
+          <div data-scroll-reveal="enter right move 70px over 1s" class="feature-detail-video-wrap">
+            <video id="my-video" class="video-js vjs-big-play-centered vjs-16-9 feature-detail-video" preload="false" autoplay muted loop
+              poster="./images/img_api-proxy.png" data-setup="{}">
+              <source src="./videos/api.mp4" type="video/mp4" />
+              <p class="vjs-no-js">请开启 JavaScript 以浏览内容</p>
+            </video>
+          </div>
         </div>
       </div>
     </div>
@@ -512,5 +527,6 @@
 <script src="./js/scroll-text.js"></script>
 <script src="./js/scroll-reveal.js"></script>
 <script src="./js/index.js"></script>
+<script src="./js/video.min.js"></script>
 
 </html>
