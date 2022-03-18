@@ -9,7 +9,7 @@
   function rollingText() {
     textRollMasks = document.querySelectorAll('*[text-roll-mask]');
 
-    textRollInterval = setInterval(textRollTransfer, 2000);
+    textRollInterval = setInterval(textRollTransfer, 3000);
 
     [...textRollMasks].forEach((rollMask) => {
       if (!rollMask.children.length) return;

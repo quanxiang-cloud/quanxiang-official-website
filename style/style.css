@@ -277,8 +277,7 @@ body {
 }
 
 .home-brand {
-  width     : 100px;
-  object-fit: cover;
+  width     : 80px;
 }
 
 .home-nav {
@@ -354,20 +353,22 @@ body {
   gap           : 10px;
 }
 
+.home-star-btn-wrap{
+  border-radius   : var(--dl-radius-radius-radius4);
+  background-color: white;
+  margin-left     : 36px;
+  box-sizing      : border-box;
+}
+
 .home-star-btn {
   width           : 70px;
   height          : 30px;
   display         : flex;
   position        : relative;
-  box-sizing      : border-box;
   align-items     : center;
-  margin-left     : 36px;
   border          : 1px solid var(--dl-color-gray-2);
-  border-radius   : var(--dl-radius-radius-radius4);
   justify-content : center;
-  background-color: var(--dl-color-gray-0.5);
-  cursor          : pointer;
-  transition      : 300ms all ease-in-out;
+  border-radius   : var(--dl-radius-radius-radius4);
   color           : var(--dl-color-gray-6);
 }
 
