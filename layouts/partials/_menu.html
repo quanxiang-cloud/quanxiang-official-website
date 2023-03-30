@@ -1,0 +1,44 @@
+
+
+  {{ $currentNode := . -}}
+  {{ $level := 1}}
+  {{range $index, $element := .Site.Sections}}
+  {{if not .Draft}}
+    <li class="pages-tree-node {{if hasPrefix $currentNode.RelPermalink .RelPermalink }}active {{ end -}} node-level-{{$level}}"> 
+      <a class="{{if eq $currentNode .}} current-node {{end}}">{{$element.Title}}
+        <span class="{{with hasPrefix $currentNode.RelPermalink .RelPermalink }} arrow-rotate {{ end -}} tree-icon">
+          {{ partial "svg.html" (dict "name" "arrow_down" "width" 24 "height" 24 "fill" "none" ) }}
+        </span>
+      </a> 
+      {{ template "subtree" dict "sect" . "currentnode" $currentNode "level" (add $level 1)}}
+    </li> 
+  {{end}}
+  {{end}}
+
+{{ define "subtree" }}
+{{ $currentNode := .currentnode }}  
+{{ $level := .level }}  
+    {{with .sect}}
+      {{ with .Pages}}
+      <ul class="pages-tree-root">
+        {{ range . }}
+        {{if not .Draft}}
+          <li class="pages-tree-node {{if hasPrefix $currentNode.RelPermalink .RelPermalink }}active {{ end -}} node-level-{{$level}}">
+              {{if .Pages}}
+              <a class="{{if eq $currentNode .}} current-node {{end}}">{{.Title}} 
+                <span class="{{with hasPrefix $currentNode.RelPermalink .RelPermalink }} arrow-rotate {{ end -}} tree-icon">
+                  {{ partial "svg.html" (dict "name" "arrow_down" "width" 24 "height" 24 "fill" "none" ) }}
+                </span>             
+               </a>  
+              {{else}}
+                <a href="{{.RelPermalink}}" class="{{if eq $currentNode .}} current-node {{end}}">{{.Title}}
+              {{end}}
+            </a> 
+          {{ template "subtree" dict "sect" . "currentnode" $currentNode "level" (add $level 1)}}
+          </li>
+        {{end}}
+        {{ end }}
+      </ul>
+      {{ end }}
+    {{end}}
+{{ end}}

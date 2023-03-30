@@ -1,0 +1,121 @@
+{{if  .Site.Params.color_main}}
+$color_main : {{ .Site.Params.color_main  }}  ;
+{{else}}
+$color_main : hsl(random(360)-1, random(100)-1%, 45%);
+// {{end}}
+
+$c_dark1: darken($color_main, 15%);
+
+article > aside {
+  background: #f8fafc;
+  padding: 2rem 0rem 1rem 0rem;
+
+  div.search {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: calc(100%);
+    input {
+      padding: 3px 25px;
+      width: 100%;
+      height: 2rem;
+      border: 0px;
+      background-color: transparentize($color_main, 0.9);
+      border-bottom: 1px solid transparentize($color_main, 0.8);
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    list-style-type: none;
+    width: 300px;
+    line-height: 2rem;
+    padding: 0 20px;
+    padding-left: 100px;
+    margin-top: 2rem;
+  }
+}
+
+body {
+  a {
+    text-decoration: none;
+  }
+}
+
+.pages-tree-root{
+  overflow-y: auto;
+  .active > ul {
+  max-height: 2000px;
+  }
+  .node-level-1{
+    font-size: 16px;
+  }
+  .node-level-2{
+    font-size: 14px;
+  }
+}
+.icon-rotate {
+  transform: rotate(180deg);
+}
+.menu-tree {
+  position: fixed;
+  top: 110px;
+}
+.menu-tree > li {
+  margin-bottom: 16px;
+}
+
+.menu-tree > li > a {
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.pages-tree-node {
+  margin: 2px 0;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  .current-node {
+    color: #375ff3;
+  }
+  ul {
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+    padding-left: 20px;
+  }
+  a {
+    display:block;
+    color: #475569;
+    &:hover{
+      color:#375ff3;
+    }
+  }
+  span{
+    display:flex;
+    align-items:center;
+  }
+  svg{
+    transition: transform .3s ease-in-out;
+  }
+  .arrow-rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.tree-icon {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.current-node {
+  color: #0f172a;
+}

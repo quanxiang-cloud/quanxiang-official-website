@@ -1,0 +1,70 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="{{ now.Format "2006-01-02T15:04:05 MST" }}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta name="keywords" content="{{ with .Keywords }}{{ . }}{{ else }}{{ with .Site.Params.Keywords }}{{ . }}{{ end }}{{ end }}">
+
+
+{{ with .Site.Params.author }}
+<meta name="author" content="{{ . }}">
+{{ end }}
+
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+
+
+
+<link rel="shortcut icon" href='{{"images/favicon.png" | relURL}}' type="image/x-icon" />
+
+<script src='{{"js/jquery-3.5.1.min.js" | relURL}}'></script>
+<script src='{{"js/bootstrap.min.js" | relURL}}'></script>
+<script src='{{"js/docport.js" | relURL}}'></script>
+
+<!-- docport css/js -->
+{{/*  <link rel="stylesheet" type="text/css" href='{{"/css/bootstrap.min.css" | relURL}}'>  */}}
+<link rel="stylesheet" type="text/css" href='{{"/css/reset.css" | relURL}}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/layout.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/homepage.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "css/style.main.scss" . | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/menu.scss" | resources.ExecuteAsTemplate "css/style.menu.scss" . | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/shortcodes/alert.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/shortcodes/table.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/shortcodes/tabs.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/shortcodes/panel.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/shortcodes/columns.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/shortcodes/children.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/shortcodes/attachments.scss" | toCSS).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "sass/shortcodes/search.scss" | toCSS).Permalink }}'>
+
+<style>
+      :root{
+        --scrollbar-color: #babac0;
+        --scrollbar-size: 5px;
+        --primary-color:{{ .Site.Params.primary_color }};
+        --body-color:{{ .Site.Params.body_color }};
+        --text-color:{{ .Site.Params.text_color }};
+        --text-color-dark:{{ .Site.Params.text_color_dark }};
+        --white-color:{{ .Site.Params.white_color }};
+        --light-color:{{ .Site.Params.light_color }};
+        --font-family:{{ replace .Site.Params.font_family ' ' '+' | title }};
+      }
+      ::-webkit-scrollbar {
+				width: 0;
+				height: var(--scrollbar-size);
+      }
+      
+      ::-webkit-scrollbar-thumb {
+				border-radius: var(--scrollbar-size);
+				background-color: var(--scrollbar-color);
+      }       
+</style>
+
+
+<script type="text/javascript">
+      var baseurl = "{{.Site.BaseURL}}";
+</script>
+
+
+{{ template "_internal/google_analytics.html" . }}
+
+
+{{- partial "head.html" . }}

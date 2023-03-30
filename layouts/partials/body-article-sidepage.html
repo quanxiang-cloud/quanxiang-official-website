@@ -1,0 +1,19 @@
+{{- partial "_mdinclude.html" (dict "name" "article-sidebar-before" "context" .) -}}
+<div class="page-toc">
+	<h6>本页目录：</h6>
+</div>
+<div class="toc-box">
+	{{ .TableOfContents }}
+	<!-- <span class="mdi mdi-arrow-collapse-up to-top" id="to-top-btn"></span> -->
+</div>
+{{- partial "_mdinclude.html" (dict "name" "article-sidebar-after" "context" .) -}}
+<script>
+	if(!$("#TableOfContents > ul > li > a").html()){
+		$("#TableOfContents").html('暂无目录');
+	} else {
+		$("#TableOfContents").addClass('toc').find('ul').addClass('nav toc-nav')
+		$('body').scrollspy({ target: '#TableOfContents', offset:100 })
+	}
+</script>
+
+

@@ -1,0 +1,61 @@
+
+    <!-- FIL D'ARIANE -->
+    {{if not (in .Params.hide "breadcrumb")}}
+    <nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				{{ partial "breadcrumb" . -}}
+				<li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+			</ol>
+		</nav>
+    {{end}}
+    <!-- FIN FIL D'ARIANE -->
+
+    <!-- TITRE -->
+		{{$pagetitle := .Title}}
+        {{if eq $pagetitle ""}}
+        	{{with .File}}{{$pagetitle = .BaseFileName}}{{end}}
+        {{end}}
+		
+		{{ $cPage := .}}
+		{{ $elements := (where .Sections "NONONO" false) }}
+		{{ $isSubPage := .Params.subpage }}
+		{{ $subpages := (where (where (where .Sections.ByWeight "Params.subpage" true) "Params.hidden" "ne" true ) "Kind" "section")}}
+		{{ $pages := (where (where .CurrentSection.Pages.ByWeight "Kind" "page") "Params.hidden" "ne" true ) }}
+		
+
+	
+			<h1>{{$pagetitle}}</h1>
+
+			<div class="doc-content-info">
+				<div class="mb-0">更新时间：{{ (os.Stat .File.Path).ModTime | time.Format "2006-01-02 15:04:05" }}</div>
+				<div class="mb-0">
+					<!-- <span class="mdi mdi-github"><a href="#">前往 GitHub 编辑</a></span> -->
+					<!-- <span class="mdi mdi-download"><a id="export-pdf">下载PDF</a></span> -->
+					<!-- <span class="mdi mdi-share-variant-outline"><a href="#">分享</a></span> -->
+				</div>
+			</div>
+
+		{{if gt (len $subpages) 0}} 	<!-- section has subpage -->
+			{{ $elements = $subpages }}
+		{{else if $isSubPage }}			<!-- Section is subpage -->
+			{{ $elements = (where (where .Parent.Sections.ByWeight "Params.subpage" true) "Params.hidden" "ne" true ) }}
+		{{else if gt (len $pages) 0}}	<!-- Section has pages	 -->
+			{{ $elements = $pages }}
+		{{else}}
+										<!-- section has no subpage and is not subpage -->
+		{{end}}
+
+
+	<!-- FIN TITRE -->
+	<div class="content">
+    {{- with .Content -}}
+	    {{ . | replaceRE "(<h[1-9]) id=\"([^\"]+)\"(.+)(</h[1-9]+>)" `${1} ref="${2}" ${3}${4}<a class="anchor" id="${2}"></a>` | safeHTML }}
+    {{- else -}}
+      {{with index .Pages 0}}
+      <meta http-equiv = "refresh" content = "0; url = {{.RelPermalink}}"/>
+      {{- else -}}
+      	No content
+      {{- end -}}
+    {{- end -}}
+	</div>
+	{{ partial "docs-navigation.html" . }}

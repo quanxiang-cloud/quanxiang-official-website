@@ -1,0 +1,7 @@
+<div class="autoComplete_wrapper">
+  {{- if .Site.Params.Search.Enable }}
+    <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off">
+  {{else}}
+    <input id="autoComplete" disabled placeholder="搜索功能不可用" />
+  {{- end}}
+</div>

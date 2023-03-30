@@ -1,0 +1,64 @@
+<div class="header-content">
+  <div class="logo">
+    <!-- {{- $defaultheader := printf "<a class='baselink' href='%s'>%s</a>" .Site.BaseURL .Site.Title -}} -->
+    <!-- {{- partial "_mdinclude.html" (dict "name" "header" "context" . "info" $defaultheader ) -}} -->
+    <a href="{{ site.BaseURL | relLangURL }}">
+      {{ $logo:= site.Params.logo }}
+      {{ $logoWhite:= site.Params.logo_white }}
+      {{ if (or $logo $logoWhite) }}
+      {{ if .IsHome }}
+      <img src="{{if $logoWhite }}{{ $logoWhite | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
+        alt="{{ site.Title }}">
+      {{ else }}
+      <img src="{{ $logo | absURL }}" alt="{{ site.Title }}">
+      {{ end }}
+      {{ else }}
+      {{ site.Title }}
+      {{ end }}
+    </a>
+  </div>
+  <div class="header-right">
+
+  {{ if not .IsHome }}
+  <div class="header-search">
+    {{ partial "static_search.html" . }}
+  </div>
+  {{ end }}
+  {{- with .Site.Menus.shortcuts}}
+
+  <nav class="shortcuts">
+    {{- range sort . "Weight"}}
+    <span>
+      <a href="{{.URL}}" {{if eq $.Site.Params.menushortcutsnewtab true}}target="_blank" {{end}} rel="noopener">
+        {{safeHTML .Name}}
+      </a>
+    </span>
+    {{- end}}
+    <div>
+      {{ range site.Menus.dropdown }}
+      {{ if .HasChildren }}
+      <span class="nav-item dropdown">
+        <a class="nav-link nav-button dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          {{ .Name }}
+        </a>
+        <div class="dropdown-menu">
+          {{ range .Children }}
+          <a target="_blank" class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          {{ end }}
+        </div>
+      </span>
+      {{ else }}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </div>
+
+  </nav>
+  {{- end}}
+</div>
+
+
+</div>

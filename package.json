@@ -1,10 +1,12 @@
 {
-  "name": "qxp-home-page",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "parcel-bundler": "^1.6.1"
-  },
-  "scripts": {},
-  "devDependencies": {}
+  "scripts": {
+    "hugobuild": "hugo -D",
+    "rmDStore": "find ./public -name '.DS_Store' | xargs rm -f",
+    "deploy": "rsync -r --progress ./public/. root@192.168.208.14:/home/qingcloud/qxp-docs",
+    "prepublish": "npm run hugobuild",
+    "publish": "npm run rmDStore",
+    "postpublish": "npm run deploy",
+    "start": "hugo server -D",
+    "search_process": "python3 search_process.py -k ''"
+  }
 }

@@ -1,0 +1,45 @@
+[[shortcuts]]
+name = "文档中心"
+identifier = "home"
+url = "/"
+weight = 10
+
+# Dropdown menu
+[[dropdown]]
+weight = 4
+name = "进入工作台"
+hasChildren = true
+
+  [[dropdown]]
+  parent = "进入工作台"
+  name = "进入用户端"
+  url = "https://home.quanxiang.dev"
+  weight = 1
+
+  [[dropdown]]
+  parent = "进入工作台"
+  name = "进入管理端"
+  url = "https://portal.quanxiang.dev"
+  weight = 2
+
+  [[quickportal]]
+  name = "快速入门"
+  identifier = "guide"
+  url = "/quickstart/"
+  title = "快速上手全象云平台，5分钟搭建应用"
+  weight = 1
+
+[[quickportal]]
+  name = "最佳实践"
+  identifier = "practice"
+  url = "/manual/application/"
+  title = "业务场景实践示例，轻松助您快速上手"
+  weight = 2
+
+[[quickportal]]
+  name = "视频教程"
+  identifier = "video"
+  url = "/"
+  #title = "简单基础视频课程，高效上手全象云"
+  title = "页面暂未开放"
+  weight = 3

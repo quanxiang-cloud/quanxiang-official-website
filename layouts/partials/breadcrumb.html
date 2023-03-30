@@ -1,0 +1,4 @@
+{{ with .Parent -}}
+  {{ partial "breadcrumb.html" . -}}
+  <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ if .IsHome }}主页{{ else }}{{ .Title }}{{ end }}</a></li>
+{{ end -}}

@@ -1,0 +1,18 @@
+<nav class="pagination mt-3 border-top">
+  {{ with .NextInSection }}
+			<a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page" >
+				{{ partial "svg.html" (dict "name" "arrow_left" "width" 24 "height" 24 "fill" "none" ) }}
+				<div class="prev-text">上一篇：{{.Title}}</div>
+			</a>
+			{{else}}
+			<span> </span>
+    {{ end }}
+    {{ with .PrevInSection }}
+			<a class="nav nav-next" href="{{.Permalink }}" aria-label="next page" >
+				<div class="next-text">下一篇：{{.Title}}</div>
+				{{ partial "svg.html" (dict "name" "arrow_right" "width" 24 "height" 24 "fill" "none" ) }}
+			</a>
+			{{else}}
+			<span> </span>
+    {{ end }}
+</nav>

@@ -1,0 +1,37 @@
+ordersectionsby = "weight" # ordersectionsby = "title"
+color_main = "#737373"
+bannerTitle = "全象云平台文档"
+logo="images/logo/quanxiangyun.svg"
+#color_second = "#2861F3"
+disableSearch = false # default is false
+disableNavChevron = false # set true to hide next/prev chevron, default is false
+menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+
+#editURL = "https://github.com/vjeantet/hugo-theme-docport/edit/master/exampleSite/content/"
+editWithNetlifyCMSURL = "admin/#/collections/pages/entries/"
+enableGitInfo = true
+
+font_family = ""  # Choose font family from : https://fonts.google.com/
+
+
+# customize color
+primary_color = "#2861F3"
+body_color = "#FFFFFF"
+text_color = "#475569"
+text_color_dark = "#0F172A"
+white_color = "#ffffff"
+light_color = "#F0F6FF"
+
+
+searchPlaceholders = "搜索功能暂时不可用"
+
+Description = "全象云平台文档——开源低代码平台，帮助加速企业数智化转型。"
+Keywords = "低代码,开源,全象云,青云,智能办公"
+
+# For search engine
+[Search]
+enable = true    # true or false
+type = 'lunr'  # lunr or algolia
+index = 'algolia_index'  # algolia enabled
+appID = 'algolia_application_id' # algolia enabled
+searchKey = 'algolia_search_only_key' # algolia enabled

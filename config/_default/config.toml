@@ -1,0 +1,54 @@
+baseURL = "https://docs.clouden.io/"
+
+languageCode = "zh-cn"
+DefaultContentLanguage = "zh"
+title = "全象云平台文档"
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
+
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+
+
+# [Languages]
+# [Languages.en]
+# title = "Documentation for Hugo docport"
+# weight = 1
+# languageName = "English"
+# 
+# [Languages.fr]
+# title = "Documentation du thème docport"
+# weight = 2
+# languageName = "Français"
+
+disableKinds = ["taxonomy", "taxonomyTerm", "category", "RSS"]
+
+[mediaTypes]
+  [mediaTypes."application/netlifyconfig"]
+    suffixes = ["yml"]
+
+[outputFormats]
+[outputFormats.netlifyyaml]
+mediaType = "application/netlifyconfig"
+isPlainText = true
+isHTML = false
+notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+# Code highlight configuration
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "monokai"
+tabWidth = 2
