@@ -77,7 +77,7 @@ weight: 4110
 
    {{</ alert >}}
 
-2. 点击 **新建工作流**，详细步骤参见：[工作流管理](https://docs.clouden.io/manual/workflow/)。
+2. 点击 **新建工作流**，详细步骤参见：[工作流管理](https://quanxiang.dev/manual/workflow/)。
 
 
 
